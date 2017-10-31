@@ -14,6 +14,12 @@
     "sourceType": "module"
   },
   "rules": {
+    "flowtype/require-return-type": [2, "always"],
+    "flowtype/require-parameter-type": [
+      2,
+      { "excludeArrowFunctions": "expressionsOnly" }
+    ],
+    "flowtype/require-valid-file-annotation": [2, "always"],
     "max-len": ["error", 80],
     "no-const-assign": "warn",
     "no-this-before-super": "warn",

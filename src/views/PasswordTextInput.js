@@ -23,7 +23,10 @@ export default class PasswordTextInput extends React.PureComponent<
     hideText: true,
   };
 
-  onPress = () => this.setState({ hideText: !this.state.hideText });
+  onPress = () =>
+    this.setState(function(state) {
+      return { hideText: !state.hideText };
+    });
 
   onChangeText = text => this.setState({ text });
 
@@ -44,7 +47,7 @@ export default class PasswordTextInput extends React.PureComponent<
     return null;
   };
 
-  render(): React.Element<*> {
+  render(): React.Element<View> {
     return (
       <View style={[styles.container, this.onShownBackground()]}>
         <TextInput

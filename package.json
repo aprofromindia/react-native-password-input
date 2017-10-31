@@ -33,7 +33,11 @@
   },
   "jest": {
     "preset": "react-native",
-    "setupFiles": ["./jestSetup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "setupFiles": [
+      "./jestSetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

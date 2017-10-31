@@ -16,6 +16,7 @@ describe('PasswordTextInput', () => {
   it('should store password', () => {
     wrapper.find('TextInput').simulate('changeText', 'password123');
     expect(wrapper.state('text')).toBe('password123');
+    expect(wrapper.find('TextInput').prop('secureTextEntry')).toBeTruthy();
     expect(wrapper).toMatchSnapshot();
   });
 
