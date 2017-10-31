@@ -61,7 +61,7 @@ export default class PasswordTextInput extends React.PureComponent<
         />
         <TouchableOpacity style={styles.button} onPress={this.onPress}>
           <Text style={this.onShownText()}>
-            {this.state.hideText ? 'HIDE' : 'SHOW'}
+            {this.state.hideText ? 'SHOW' : 'HIDE'}
           </Text>
         </TouchableOpacity>
       </View>
